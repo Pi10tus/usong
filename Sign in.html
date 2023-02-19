@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <form id="signbody" onsubmit="return checkSignIn(this)">
+      <br />
+      <div class="maintext2">
+        <h1 style="margin-top: 0; padding: 0">Sign in</h1>
+
+        <input type="email" placeholder="Email" name="" id="em_data" />
+        <br />
+        <input type="password" placeholder="Password" name="" id="pas_data" />
+        <br />
+        <input type="submit" value="Sign in" onclick="false" name="" id="sub" />
+        
+        <div id="error"></div>
+        <input
+          type="checkbox"
+          style="display: inline"
+          name=""
+          id="save_data"
+          style="margin-top: 10px"
+        />
+        <span class="first">Remember me</span>
+
+        <span class="first" style="display: block; float: right">Help</span>
+        <br />
+        <span class="first" style="display: block; margin-top: 1vh"
+          >Sign in with google</span
+        >
+        <script src="./js/SignIn.js"></script>
+      </div>
+    </form>
+  </body>
+</html>
